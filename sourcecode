@@ -1,0 +1,55 @@
+import time
+print("Hey, Welcome to HOW PREDICTABLE ARE YOU !!! ")
+time.sleep(1)
+print("Let's see if I can predict you or not....")
+time.sleep(1)
+ans = input("Are You Ready??? YES/NO \n").lower()
+if ans == "yes":
+  print("So I want you to choose any number from 1 to 16 and remember it.")
+  time.sleep(0.5)
+  n = 1 
+  for i in range(4):
+    for j in range(4):
+      print(n, end = "\t")
+      n = n+1
+    print()
+  
+  no1 = input("Choose any number and remeber it. Once you've chosen the number, say DONE\n").lower()
+  if no1 == "done":
+    print("ALrighty!!! Now It's time to choose anoter number. But...")
+    time.sleep(1)
+    print("I want you to pick a number that is in the different row and different column")
+    no2 = input("Once you've chosen the number, say DONE\n").lower()
+    if no2 == "done":
+      time.sleep(1)
+      print("\nWe are going to repeat this process.")
+      print("I want you to pick another number (different row and different column)")
+      no3 = input("Once you've chosen the number, say DONE\n").lower()
+      if no3 == "done":
+        print("\n Okay cool\n")
+        print("We are going to repeat this process one last time.")
+        print("I want you to pick another number (different row and different column")
+        no4 = input("Once you've chosen the number, say DONE\n").lower()
+        if no4 == "done":
+          print("\nOkay, that's it. One last thing...")
+          time.sleep(0.5)
+          print("There's no chance that I would have known you're guessed number...")
+          print("I want you to add these 4 numbers")
+          time.sleep(1)
+          print("THE ADDITION IS: 34")
+          time.sleep(1)
+          
+          print("SO I CAN PREDICT YOU, CAN'T I?")
+          time.sleep(1)
+          
+          print("Thank You For Your Time!!!")
+        else:
+          print("Invalid Input, Try again")
+      else:
+        print("Invalid Input, Try again")  
+    else:
+      print("Invalid Input, Try again")
+  else:
+    print("Invalid Input, Try again")  
+else:
+  print("Okay, Bye !!! ")
